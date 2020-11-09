@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+#include <iostream>
+#include <bitset>
+using namespace std;
+
+int main(int argc, char** argv) {
+	int a,b;
+	
+	cout<<"Podaj A: \n";
+	cin>>a;
+	cout<<"Podaj B: \n"<<"\n";
+	cin>>b;
+	
+	cout<<"A: "<<a<<"\n";
+	cout<<"B: "<<b<<"\n"<<"\n";
+
+	cout<<"A^B= "<<bitset<8>(a^b)<<"\n";
+	
+    cout<<"A|B= "<<bitset<8>(a|b)<<"\n";
+
+    cout<<"A&B= "<<bitset<8>(a&b)<<"\n";
+
+    cout<<"~A= "<<bitset<8>(~a)<<"\n";
+
+    cout<<"~B= "<<bitset<8>(~b)<<"\n";
+
+    cout<<"A<<=1 "<<bitset<8>(a<<=1)<<"\n";
+
+    cout<<"B>>=1 "<<bitset<8>(b>>=1)<<"\n";
+	
+  //KS
+	return 0;
+}
