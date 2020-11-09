@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <iostream>
 #include <bitset>
@@ -15,20 +14,35 @@ int main(int argc, char** argv) {
 	cout<<"A: "<<a<<"\n";
 	cout<<"B: "<<b<<"\n"<<"\n";
 
-	cout<<"A^B= "<<bitset<8>(a^b)<<"\n";
+	cout<<"A^B(2)= "<<bitset<8>(a^b)<<"\n";
 	
-    cout<<"A|B= "<<bitset<8>(a|b)<<"\n";
+    cout<<"A|B(2)= "<<bitset<8>(a|b)<<"\n";
 
-    cout<<"A&B= "<<bitset<8>(a&b)<<"\n";
+    cout<<"A&B(2)= "<<bitset<8>(a&b)<<"\n";
 
-    cout<<"~A= "<<bitset<8>(~a)<<"\n";
+    cout<<"~A(2)= "<<bitset<8>(~a)<<"\n";
 
-    cout<<"~B= "<<bitset<8>(~b)<<"\n";
+    cout<<"~B(2)= "<<bitset<8>(~b)<<"\n";
 
-    cout<<"A<<=1 "<<bitset<8>(a<<=1)<<"\n";
+    cout<<"(2)A<<=1 "<<bitset<8>(a<<=1)<<"\n";
 
-    cout<<"B>>=1 "<<bitset<8>(b>>=1)<<"\n";
+    cout<<"(2)B>>=1 "<<bitset<8>(b>>=1)<<"\n"<<"\n"<<"\n";
+    
+    
+    
+    cout<<"A^B(10)= "<<bitset<10>(a^b)<<"\n";
 	
-  //KS
+    cout<<"A|B(10)= "<<bitset<10>(a|b)<<"\n";
+
+    cout<<"A&B(10)= "<<bitset<10>(a&b)<<"\n";
+
+    cout<<"~A(10)= "<<bitset<10>(~a)<<"\n";
+
+    cout<<"~B(10)= "<<bitset<10>(~b)<<"\n";
+
+    cout<<"(10)A<<=1 "<<bitset<10>(a<<=1)<<"\n";
+
+    cout<<"(10)B>>=1 "<<bitset<10>(b>>=1)<<"\n";
+	
 	return 0;
 }
